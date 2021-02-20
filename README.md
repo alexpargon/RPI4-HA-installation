@@ -43,7 +43,7 @@ installation process and resources for RPi4 with HA
     # Install home assistant with supervisor using explicit device flag
     curl -sL "https://raw.githubusercontent.com/Kanga-Who/home-assistant/master/supervised-installer.sh" | bash -s -- -m raspberrypi4
     ```
-    3. After installing, access https://YourRPiIPAddress:8123 to know when the process has finished and to configure an account
+    3. After install, access https://YourRPiIPAddress:8123 to know when the process has finished and to configure an account
     4. Access this account from chromium at the 3.5 inch screen with your user and password so they stay registered for that device
 11. Setup RPi4 in kiosk mode by editing this file
 ```shell
