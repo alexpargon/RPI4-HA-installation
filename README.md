@@ -56,4 +56,8 @@ xset s off
 xset s noblank
 @chromium-browser --kiosk --incognito --noerrdialogs --disable-translate --no-first-run --fast --fast-start --disable-infobars --app=http://localhost:8123
 ```
-13. after this changes, you're done! to test this either run `sudo systemctl restart lightdm.service` or reboot the whole RPi, it should now start and log in to HomeAutomation in kiosk mode.
+13. add the following line at the end of /etc/ssh/sshd_config to prevent ssh freeze
+```
+IPQoS cs0 cs0
+```
+14. after this changes, you're done! to test this either run `sudo systemctl restart lightdm.service` or reboot the whole RPi, it should now start and log in to HomeAutomation in kiosk mode.
